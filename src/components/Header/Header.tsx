@@ -35,23 +35,25 @@ function Header() {
 
     return (
         <div className='app-header'>
-            <div className='logo' onClick={handleHome}>
+            <div className='logo-container' onClick={handleHome}>
                 Logo
             </div>
-            <div className='app-links'>
-                <div className='about-link' onClick={handleAbout}>{t("about")}</div>
-                <div className='portfolio-link' onClick={handlePortfolio}>{t("portfolio")}</div>
-                <div className='price-link' onClick={handlePrice}>{t("price")}</div>
-                <div className='contact-link' onClick={handleContact}>{t("contact")}</div>
-            </div>
-            <select value={i18n.language} onChange={onChangeLang}>
-                <option value="pl">Polski</option>
-                <option value="en">English</option>
-            </select>
+            <div className='links-container'>
+                <div className='app-links'>
+                    <a className='about-link' onClick={handleAbout}>{t("about")}</a>
+                    <a className='portfolio-link' onClick={handlePortfolio}>{t("portfolio")}</a>
+                    <a className='price-link' onClick={handlePrice}>{t("price")}</a>
+                    <a className='contact-link' onClick={handleContact}>{t("contact")}</a>
+                </div>
+                <select value={i18n.language} onChange={onChangeLang}>
+                    <option value="pl">Polski</option>
+                    <option value="en">English</option>
+                </select>
 
-            <div className='social-media'>
-                <div className='insta-link' onClick={handleInsta}>INST</div>
-                <div className='facebook-link' onClick={handleFacebook}>facebook</div>
+                <div className='social-media'>
+                    <div className='insta-link' onClick={handleInsta}>INST</div>
+                    <div className='facebook-link' onClick={handleFacebook}>FFF</div>
+                </div>
             </div>
         </div>
     )
