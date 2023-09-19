@@ -2,6 +2,9 @@ import './Header.css'
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 
+import FacebookIcon from '../../assets/items/facebook_icon.svg'
+import InstagramIcon from '../../assets/items/instagram_icon.svg'
+
 function Header() {
     const navigate = useNavigate();
     const { i18n, t } = useTranslation();
@@ -45,15 +48,21 @@ function Header() {
                     <a className='price-link' onClick={handlePrice}>{t("price")}</a>
                     <a className='contact-link' onClick={handleContact}>{t("contact")}</a>
                 </div>
-                <select value={i18n.language} onChange={onChangeLang}>
-                    <option value="pl">Polski</option>
-                    <option value="en">English</option>
-                </select>
+
 
                 <div className='social-media'>
-                    <div className='insta-link' onClick={handleInsta}>INST</div>
-                    <div className='facebook-link' onClick={handleFacebook}>FFF</div>
+                    <div className='insta-link' onClick={handleInsta}>
+                        <img src={InstagramIcon} width={35} height={35} />
+                    </div>
+                    <div className='facebook-link' onClick={handleFacebook}>
+                        <img src={FacebookIcon} width={30} height={30}></img>
+                    </div>
                 </div>
+
+                <select value={i18n.language} onChange={onChangeLang}>
+                    <option value="pl">Pl</option>
+                    <option value="en">En</option>
+                </select>
             </div>
         </div>
     )

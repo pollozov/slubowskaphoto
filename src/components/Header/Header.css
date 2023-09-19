@@ -26,14 +26,17 @@
 
 .app-links, .social-media {
     display: flex;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
     justify-content: space-between; 
     align-items: center;
     cursor: pointer;
 }
 
-.app-links > a, .social-media > div {
+.app-links > a {
     padding: 25px 25px;
+}
+.social-media > div {
+    padding: 0px 10px;
 }
 
 a.active, a:hover {
@@ -41,3 +44,12 @@ a.active, a:hover {
     transition: .5s;
 }
 
+
+select {
+    background-color: transparent;
+    border: none;
+    margin: 0 20px 0 0;
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+  }
