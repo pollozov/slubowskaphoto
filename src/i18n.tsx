@@ -17,6 +17,8 @@ i18n
                     portfolio: 'Portfolio',
                     price: 'Oferta',
                     contact: 'Kontakt',
+                    home_name: 'Beata Ślubowska',
+                    home_description: 'FOTOGRAFIA',
                 }
             },
             en: {
@@ -26,6 +28,8 @@ i18n
                     portfolio: 'Portfolio',
                     price: 'Price',
                     contact: 'Contact',
+                    home_name: 'Beata Ślubowska',
+                    home_description: 'PHOTOGRAPHY',
                 }
             },
         },
